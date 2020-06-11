@@ -103,22 +103,3 @@ func SignInputToJson(signIn *SignInput) string {
 	}
 	return ""
 }
-
-// // EnKeystore 用于将私钥和 `密码 + udid` 加密得到 keystore json 数据。
-// func enKeystore(privateKey, password, udid string) *KeystoreResult {
-
-// 	result, err := keystore.EncryptKey(privateKey, password, udid)
-// 	if err != nil {
-// 		return &KeystoreResult{ResCode: 0, ErrMsg: err.Error()}
-// 	}
-// 	return &KeystoreResult{ResCode: 1, Result: result}
-// }
-
-// // DeKeystore 用于将 keystore json 数据通过 `密码 + udid` 解密得到私钥。
-// func deKeystore(json, password, udid string) *KeystoreResult {
-// 	result, err := keystore.DecryptKey(json, password, udid)
-// 	if err != nil {
-// 		return &KeystoreResult{ResCode: 0, ErrMsg: err.Error()}
-// 	}
-// 	return &KeystoreResult{ResCode: 1, Result: result}
-// }

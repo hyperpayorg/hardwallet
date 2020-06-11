@@ -8,3 +8,7 @@ import (
 func BLEGenerateWallet(wallet string) bool {
 	return hdwallet.GenerateMnWallet(datazip.BLEDeviceDataZip(wallet))
 }
+
+func BLESignRawTransaction(sign string) string {
+	return hdwallet.HDSignRawTransaction(datazip.BLEDeviceDataZip(sign))
+}

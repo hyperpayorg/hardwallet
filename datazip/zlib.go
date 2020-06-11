@@ -15,7 +15,6 @@ func BLEDeviceDataZip(raw string) string {
 	w.Close()
 	return base64.StdEncoding.EncodeToString(out.Bytes())
 }
-
 func BLEDeviceDataUnzip(encoded string) string {
 	decoded, err := base64.StdEncoding.DecodeString(encoded)
 	if err != nil {
