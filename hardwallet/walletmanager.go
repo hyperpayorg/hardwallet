@@ -1,7 +1,9 @@
 package hdwallet
 
 import (
+	"encoding/json"
 	"fmt"
+	device "hardwallet/bledevice"
 	"hardwallet/keystore"
 	"io/ioutil"
 )
@@ -16,10 +18,26 @@ func GenerateMnWallet(length int, language, password string) *WalletAccount {
 			ErrMsg: err.Error(),
 		}
 	}
-	fmt.Println(keystoreJson)
+	//fmt.Println(keystoreJson)
+	err = writeKeyStoreFile("keystore.txt", keystoreJson)
+	if err != nil {
+		return &WalletAccount{
+			Res:    0,
+			ErrMsg: err.Error(),
+		}
+	}
 	return &WalletAccount{
 		Res: 1,
 	}
+}
+func BLESignRawTransaction(zip string) string {
+	var signIn *SignInput
+	var signResult *SignResult
+	result := device.DeviceDataUnzip(zip)
+	if err := json.Unmarshal(result, &signIn); err != nil {
+		return ""
+	}
+	return result
 }
 func readKeyStoreFile(fileName string) (string, error) {
 	//b, err := ioutil.ReadFile("test.log")
