@@ -48,6 +48,8 @@ type SignInput struct {
 	Net        string
 	Inputs     []byte //Vin构造
 	Params     []byte //预留字段
+	Password   string // 密码
+
 	// GasLimit   int64  // gas数量
 	// GasPrice   int64  // gas价格
 }
@@ -57,7 +59,6 @@ type SignResult struct {
 	Coin   string // 主链币
 	Symbol string // symbol币种
 	RawTX  string //签名后的数据
-	TxHash string // 交易Hash
 	ErrMsg string // 失败原因(便于排查问题,不是必定返回)
 	Params []byte //预留字段
 }
