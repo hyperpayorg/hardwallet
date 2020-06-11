@@ -6,8 +6,17 @@ import (
 	"testing"
 )
 
-func Test_TestGenerateMnWallet(t *testing.T) {
+func Test_GenerateMnWallet(t *testing.T) {
+	ceateAccount := &clientwallet.CreateAccount{
+		Language: "english",
+		Length:   12,
+		Password: "123456",
+	}
+	fmt.Println(ceateAccount)
+	isCreated := clientwallet.GenerateMnWallet(ceateAccount)
+	fmt.Println(isCreated)
+}
 
-	account := clientwallet.GenerateMnWallet(12, "")
-	fmt.Println(account)
+func Test_SignRawTransation(t *testing.T) {
+
 }
