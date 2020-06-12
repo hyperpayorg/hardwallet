@@ -42,18 +42,17 @@ type OutPutItem struct {
 }
 
 type SignInput struct {
-	PrivateKey string //私钥
-	Coin       string // 主链币
-	Symbol     string // symbol
-	Amount     int64  //转账数量
-	Change     int64  //找零数量
-	Fee        int64  //交易费用
-	SrcAddr    string //转账地址
-	DestAddr   string //接受地址
-	Net        string
-	Inputs     []byte //Vin构造
-	Params     []byte //预留字段
-	Password   string // 密码
+	Coin     string // 主链币
+	Symbol   string // symbol
+	Amount   int64  //转账数量
+	Change   int64  //找零数量
+	Fee      int64  //交易费用
+	SrcAddr  string //转账地址
+	DestAddr string //接受地址
+	Net      string
+	Inputs   []byte //Vin构造
+	Params   []byte //预留字段
+	Password string // 密码
 
 	// GasLimit   int64  // gas数量
 	// GasPrice   int64  // gas价格

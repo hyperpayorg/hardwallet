@@ -6,6 +6,16 @@ import (
 	"hardwallet/datazip"
 	"hardwallet/keystore"
 	"io/ioutil"
+	"strings"
+)
+
+var (
+	//	mnemonic = "boy video model trap novel debris clip father art era edit salute"
+	// ## 已经支持的 BTC ETH ONT BCH LTC QTUM Libra EOS HC
+	// ## 暂未支持的    *TRX
+	coinMap = map[string]uint32{
+		"btc": BTC,
+	}
 )
 
 func GenerateMnWallet(acczip string) bool {
@@ -19,7 +29,7 @@ func GenerateMnWallet(acczip string) bool {
 	if err != nil {
 		return false
 	}
-	fmt.Println("mnemonic = ", mnemonic)
+	//fmt.Println("mnemonic = ", mnemonic)
 	keystoreJson, err := keystore.EncryptKey(mnemonic, acc.Password, "")
 	if err != nil {
 		return false
@@ -32,10 +42,31 @@ func GenerateMnWallet(acczip string) bool {
 	return true
 }
 func HDSignRawTransaction(zip string) string {
-	//var signIn *SignInput
 	result := datazip.BLEDeviceDataUnzip(zip)
 	signIn := JsonToSignInput(result)
 	fmt.Println(signIn)
+	if coinType, ok := coinMap[strings.ToLower(signIn.Coin)]; ok {
+		switch coinType {
+		case BTC:
+			break
+		default:
+			break
+		}
+		signResult := &SignResult{
+			Res: 0,
+		}
+		keystoreJson, _ := readKeyStoreFile("../hardwallet/keystore.txt")
+		mnemonic, _ := keystore.DecryptKey(keystoreJson, signIn.Password, "")
+		master, _ := NewKey(
+			Mnemonic(mnemonic), CoinType(coinType),
+		)
+		master.Net = signIn.Net
+		wallet, _ := master.GetImportWallet(coinType)
+		fmt.Println(wallet)
+
+		return datazip.BLEDeviceDataZip(SignResultToJson(signResult))
+	}
+
 	signResult := &SignResult{
 		Res: 0,
 	}

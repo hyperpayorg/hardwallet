@@ -61,6 +61,9 @@ func (c *btc) SignRawTransaction(signIn *SignInput) (*SignResult, error) {
 	if signIn.Net == "testnet" {
 		net = &chaincfg.TestNet3Params
 	}
+	c.key.opt.Params = net
+	signIn.SrcAddr, _ = c.GetAddress()
+	fmt.Println("SrcAddr = ", signIn.SrcAddr)
 	///////////////
 	dest_addr, err := btcutil.DecodeAddress(signIn.DestAddr, net)
 	if err != nil {
@@ -111,15 +114,13 @@ func (c *btc) SignRawTransaction(signIn *SignInput) (*SignResult, error) {
 		}
 		mtx.AddTxOut(output)
 	}
-	a, err := btcutil.DecodeWIF(signIn.PrivateKey)
-
 	for i, input := range vouts {
 		pk, _ := hex.DecodeString(input.Pkscript)
 		if err != nil {
 			return nil, err
 		}
 		//sigScript, err := txscript.SignatureScript(mtx, i, input.Value, pk, txscript.SigHashAll, a.PrivKey, true)
-		sigScript, err := txscript.SignatureScript(mtx, i, pk, txscript.SigHashAll, a.PrivKey, true)
+		sigScript, err := txscript.SignatureScript(mtx, i, pk, txscript.SigHashAll, c.GetKey().Private, true)
 		fmt.Println(hex.EncodeToString(sigScript))
 		if err != nil {
 			return nil, err

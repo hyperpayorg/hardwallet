@@ -6,6 +6,7 @@ type CreateAccount struct {
 	Language string // 成功必定包含地址
 	Password string // 公钥
 }
+
 type WalletAccount struct {
 	Res       int    // 0 失败 1 成功
 	Address   string // 成功必定包含地址

@@ -67,6 +67,13 @@ func newOptions(opts ...Option) *Options {
 	return opt
 }
 
+// Mnemonic set to options
+func Mnemonic(m string) Option {
+	return func(o *Options) {
+		o.Mnemonic = m
+	}
+}
+
 // GetPath return path in bip44 style
 func (o *Options) GetPath() []uint32 {
 	return []uint32{
@@ -75,13 +82,6 @@ func (o *Options) GetPath() []uint32 {
 		o.Account,
 		o.Change,
 		o.AddressIndex,
-	}
-}
-func (o *Options) GetQTUMPath() []uint32 {
-	return []uint32{
-		o.CoinType,
-		DefaultAccount,
-		DefaultAccount,
 	}
 }
 

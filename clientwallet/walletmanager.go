@@ -13,27 +13,10 @@ func GenerateMnWallet(account *CreateAccount) bool {
 
 }
 func SignRawTransaction(signIn *SignInput) *SignResult {
-
 	json := signInputToJson(signIn)
 	fmt.Println(json)
-	// acc, err := hdwallet.SignRawTransaction(signInput, coinType)
-	// if err != nil {
-	// 	return &SignResult{
-	// 		Res:    0,
-	// 		Coin:   signIn.Coin,
-	// 		Symbol: signIn.Symbol,
-	// 		ErrMsg: err.Error(),
-	// 	}
-	// }
-	// return &SignResult{
-	// 	Res:    acc.Res,
-	// 	Coin:   signIn.Coin,
-	// 	Symbol: signIn.Symbol,
-	// 	RawTX:  acc.RawTX,
-	// 	ErrMsg: acc.ErrMsg,
-	// 	Params: acc.Params,
-	// }
-	return &SignResult{}
+	acc := device.BLESignRawTransaction(json)
+	return jsonToSignResult(acc)
 }
 func jsonToSignResult(jsonString string) *SignResult {
 	var signResult *SignResult
