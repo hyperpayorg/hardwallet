@@ -53,9 +53,6 @@ type SignInput struct {
 	Inputs   []byte //Vin构造
 	Params   []byte //预留字段
 	Password string // 密码
-
-	// GasLimit   int64  // gas数量
-	// GasPrice   int64  // gas价格
 }
 
 type SignResult struct {

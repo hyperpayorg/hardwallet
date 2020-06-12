@@ -19,9 +19,7 @@ func Test_GenerateMnWallet(t *testing.T) {
 }
 
 func Test_SignRawTransation(t *testing.T) {
-
 	item1 := clientwallet.OutPutItem{
-
 		TxHash:   "fe6c982c3b8bcf50139a364a698395dbfa12093eb59c981ed11749d04f21aa1b",
 		Value:    25000000,
 		Vout:     1,
@@ -31,12 +29,7 @@ func Test_SignRawTransation(t *testing.T) {
 	outputs := []clientwallet.OutPutItem{item1}
 	// fmt.Println("ltc outputs: ", outputs)
 
-	jsonInputs, err := json.Marshal(outputs)
-	if err != nil {
-		//log.Fatal("Cannot encode to JSON ", err)
-		fmt.Println("outputs err: ", err.Error())
-
-	}
+	jsonInputs, _ := json.Marshal(outputs)
 
 	signIn := &clientwallet.SignInput{
 		Coin:     "btc",
@@ -50,6 +43,8 @@ func Test_SignRawTransation(t *testing.T) {
 		Password: "123456",
 		Inputs:   jsonInputs,
 	}
+
 	signResult := clientwallet.SignRawTransaction(signIn)
 	fmt.Println(signResult)
+
 }

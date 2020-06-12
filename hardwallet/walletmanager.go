@@ -63,7 +63,15 @@ func HDSignRawTransaction(zip string) string {
 		master.Net = signIn.Net
 		wallet, _ := master.GetImportWallet(coinType)
 		fmt.Println(wallet)
+		signResult, err := wallet.SignRawTransaction(signIn)
 
+		if err != nil {
+			signResult := &SignResult{
+				Res:    0,
+				ErrMsg: err.Error(),
+			}
+			return datazip.BLEDeviceDataZip(SignResultToJson(signResult))
+		}
 		return datazip.BLEDeviceDataZip(SignResultToJson(signResult))
 	}
 
