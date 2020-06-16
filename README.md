@@ -7,8 +7,8 @@ And use a ble middleware to simulate the relevant data compression and transmiss
 ## Environment Setup
 
 - [Go Installation](https://golang.org/doc/install)
-- About the missing librarys, use `go get xxx ..` to install them
 - `git clone https://github.com/hyperpayorg/hardwallet`
+- About the missing librarys, use `go get xxx ..` to install them
 - `cd hardwallet`
 
 ## How to use
