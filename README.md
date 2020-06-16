@@ -96,10 +96,10 @@ Data structure returned as `KeystoreResult`。
 
 ### Wallet DeKeystore 
 ```go
-   enResult := "xxxxxxx"
-	pwd := "11111"
-	udid := "AOIJF-QWEQR-VDFBET-YTAWWE"
-  // Decode
-	deResult := DeKeystore(enResult, pwd, udid)
-	fmt.Println("PrivateKey : ", deResult.Result)
+ enResult := "xxxxxxx"
+pwd := "11111"
+udid := "AOIJF-QWEQR-VDFBET-YTAWWE"
+// Decode
+deResult := DeKeystore(enResult, pwd, udid)
+fmt.Println("PrivateKey : ", deResult.Result)
 ```
