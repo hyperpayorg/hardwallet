@@ -96,7 +96,7 @@ Data structure returned as `KeystoreResult`。
 
 ### Wallet DeKeystore 
 ```go
- enResult := "xxxxxxx"
+enResult := "xxxxxxx"
 pwd := "11111"
 udid := "AOIJF-QWEQR-VDFBET-YTAWWE"
 // Decode
