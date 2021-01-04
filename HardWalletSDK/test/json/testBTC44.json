@@ -1,0 +1,69 @@
+{
+    "ver" : "01000000",
+    "p2sh-segwit" : false,
+    "p2sh-multisig" : false,
+    "main_path" : "m/44'/0'/0'",
+    "inputs" : [
+    {
+        "multisig" : false,
+        "preHash" : "2a2e910f9fb2b04f7f1ddbfb4ab05785250c2b395f572ce591167c8451f0891e",
+        "preIndex" : 1,
+        "amount" : 4944420633545,
+        "bip32_path" : {
+            "change" : false,
+            "addressIndex" : 0
+        }
+    },
+    {
+        "multisig" : false,
+        "preHash" : "0fe4fafd846b18fe545bbc2dcb70ecb1290ec0de6219cd2299cd0a1561c8d583",
+        "preIndex" : 0,
+        "amount" : 10492,
+        "bip32_path" : {
+            "change" : true,
+            "addressIndex" : 0
+        }
+    }],
+    "outputs" : [
+    {
+        "multisig" : false,
+        "address" : "1XKDbZWr9dJnrQJ1WPawv2TtVeVES8u5M",
+        "amount" : 3744400045565,
+        "change_address" : false,
+        "bip32_path" : {
+            "change" : false,
+            "addressIndex" : 0
+        }
+    },
+    {
+        "multisig" : false,
+        "address" : "1JpuFuiBfMzm99JzZG4rpZexxjortaH42t",
+        "amount" : 1018920,
+        "change_address" : false,
+        "bip32_path" : {
+            "change" : false,
+            "addressIndex":0
+        }
+    },
+    {
+        "multisig" : false,
+        "address" : "1JpuFuiBfMzm99JzZG4rpZexxjortaH42t",
+        "amount" : 600009784530,
+        "change_address" : false,
+        "bip32_path" : {
+            "change" : false,
+            "addressIndex":0
+        }
+    },
+    {
+        "multisig" : false,
+        "address" : "1HivECwQuw1i6eitLKuFDCiEWmu8KJQBAj",
+        "amount" : 600009784530,
+        "change_address" : false,
+        "bip32_path" : {
+            "change" : true,
+            "addressIndex":0
+        }
+    }],
+    "lock_time" : 0
+}

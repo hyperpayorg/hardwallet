@@ -1,0 +1,54 @@
+{
+    "ver" : "01000000",
+    "p2sh-segwit" : false,
+    "p2sh-multisig" : true,
+    "main_path" : "m/45'",
+    "m" : 2,
+    "n" : 2,
+    "cosigners" : [
+    "xpub6913UHqdFEA64vWd24kaUJqQzYbTSGi2hE3iaWTSDbPXCPnmYLqndQQimUWdFwMLabrdCRguKpxHYV7f34ZVjTfWnpdW9MGkKZMxRmvxAPN"],
+    "inc_tx" : "0100000002a3006410ed525ef55b11d5bf22d0814a51378345379d86950759d55e78080a21010000009100473044022016c8b3f2faf0d814d5fa3b8b14be0fc5573a4c8c4c228c296fbcc95b5c1a45050220018a31b7d72c32c20694c9c70926d37edf0cb2c8d72c20c2dbbf5f8f7d89775601475221033910482f94265d12abf92ad6c356b1890a71bd7ec79b3b545b495067bfa528222103fe555b780793d37445e2e8b70d60d4b6aaf3d6001b8087bc62429b68b6baffa752aeffffffffa3006410ed525ef55b11d5bf22d0814a51378345379d86950759d55e78080a2100000000910047304402207db70f857d3677c17e9ff842c5466098d32d169d3044da41f95e6a1814148f6802207ab8b64d507434687bcc9dd7d5d064cb2ac3574360f3bb7447293323eaafaf3101475221033910482f94265d12abf92ad6c356b1890a71bd7ec79b3b545b495067bfa528222103fe555b780793d37445e2e8b70d60d4b6aaf3d6001b8087bc62429b68b6baffa752aeffffffff02d44900000000000017a914759f425791f7dad69ad03f27324d9b911edbefad87472a00000000000017a914759f425791f7dad69ad03f27324d9b911edbefad8700000000",
+    "inputs" : [
+    {
+        "multisig" : true,
+        "preHash" : "210a08785ed5590795869d37458337514a81d022bfd5115bf55e52ed106400a3",
+        "preIndex" : 1,
+        "amount" : 17900,
+        "bip32_path" : {
+            "change" : false,
+            "addressIndex" : 0
+        }
+    },
+    {
+        "multisig" : true,
+        "preHash" : "210a08785ed5590795869d37458337514a81d022bfd5115bf55e52ed106400a3",
+        "preIndex" : 0,
+        "amount" : 12423,
+        "bip32_path" : {
+            "change" : false,
+            "addressIndex" : 0
+        }
+    }],
+    "outputs" : [
+    {
+        "multisig" : true,
+        "address" : "3CQwmWPgAKJxVFYZhgZ5WSubU3gUT7C7pe",
+        "amount" : 18900,
+        "change_address" : false,
+        "bip32_path" : {
+            "change" : false,
+            "addressIndex" : 0
+        }
+    },
+    {
+        "multisig" : true,
+        "address" : "3CQwmWPgAKJxVFYZhgZ5WSubU3gUT7C7pe",
+        "amount" : 10823,
+        "change_address" : false,
+        "bip32_path" : {
+            "change" : false,
+            "addressIndex" : 0
+        }
+    }],
+    "lock_time" : 0
+}

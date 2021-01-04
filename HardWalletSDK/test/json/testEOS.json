@@ -1,0 +1,25 @@
+{
+    "main_path" : "m/44'/194'/0'",
+    "EOS" : {
+        "chainID" : "",
+        "expiration" : "900",
+        "referenceBlockId" : "052de5f233dc30d0a11a09d063f43181bea9ec44bc66b33c24d9198dc6e4c15c",
+        "referenceBlockTime" : "2019-10-28 17:03:24",
+        "actions" : [
+        {
+            "type" : 0,
+            "currency" : "metpacktoken",
+            "name" : "transfer",
+            "0" : {
+                "from" : "abcdenero123",
+                "to" : "gsy123451111",
+                "asset" : "14.285 MPT",
+                "memo" : "@gmail.com"
+            }
+        }],
+        "bip32_path" : {
+            "change" : false,
+            "addressIndex" : 0
+        }
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "ver" : "01000000",
+    "p2sh-segwit" : false,
+    "p2sh-multisig" : true,
+    "main_path" : "m/45'",
+    "m" : 3,
+    "n" : 5,
+    "cosigners" : [
+    "xpub69fZU73sYR4gxkmD7nLTgAWtNyCzJ52yJUD93JjQmzUouvofiTrPtu36keJJaLUSxZRYdiFGG64hFapgUVBvVyNeN6bY1GohX3tPV3gPYGE",
+    "xpub685ZS5kT4EoUhFPnMyPNd5j17YVR1UNFKznkwrPrRVctuSdDZc4SmdW2MMfQV8cSks4zwmnb4N6QAoLTK9KfiGZbhER1FdbSX8dH3mPHpvC",
+    "xpub697Ju8p99sLaWGn6JkthjT4W2jyEnYcpGJXdCf5mbFcm3iDzkev3f2nXArikSmR7eeDL9BPAvT2wKcPyYRaCzi2t5dsN2HhmocMrkA9v3Jv",
+    "xpub68q3eQxFyNs774sgXtPqgwVGBQmSLN3EmQQQQ4hrjQEx5u4jGLkMHTPmj5YF8QdvDW2eL6YU2H4hF13skBaqdABCihSo8bAZtuqUn7sXtpN"],
+    "inputs" : [
+    {
+        "multisig" : true,
+        "preHash" : "411181292fedd76d24a2dbd8f027c457c103d407e09e3836c6ba783c39ff0902",
+        "preIndex" : 0,
+        "amount" : 6000,
+        "bip32_path" : {
+            "change" : false,
+            "addressIndex" : 0
+        }
+    }],
+    "outputs" : [
+    {
+        "multisig" : true,
+        "address" : "bitcoincash:prv4695ul7zsd6nn4erxhks5kd29crrv7cvu0r9sx6",
+        "amount" : 1000,
+        "change_address" : false,
+        "bip32_path" : {
+            "change" : false,
+            "addressIndex" : 0
+        }
+    }],
+    "lock_time" : 0
+}

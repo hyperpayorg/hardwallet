@@ -1,0 +1,23 @@
+{
+    "main_path" : "m/44'/194'/0'",
+    "EOS" : {
+        "chainID" : "9743d3df5dd83d217484cd4a0e003f94a3af6dc4f478b5bd2b47f29e128cb397",
+        "expiration" : "900",
+        "referenceBlockId" : "9743d3df5dd83d217484cd4a0e003f94a3af6dc4f478b5bd2b47f29e128cb397",
+        "referenceBlockTime" : "2018-09-07 16:35:28",
+        "actions" : [
+        {
+            "type" : 4,
+            "currency" : "eosio",
+            "name" : "sellram",
+            "4" : {
+                "account" : "gq4demjrhege",
+                "bytes" : "134246400"
+            }
+        }],
+        "bip32_path" : {
+            "change" : false,
+            "addressIndex" : 0
+        }
+    }
+}

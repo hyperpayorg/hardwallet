@@ -1,0 +1,28 @@
+{
+    "ver" : "01000000",
+    "main_path" : "m/44'/171'/0'",
+    "inputs" : [
+    {
+        "amount" : 500000000,
+        "bip32_path" : {
+            "change" : false,
+            "addressIndex" : 0
+        }
+    }],
+    "outputs" : [
+    {
+        "change_address" : false,
+        "bip32_path" : {
+            "change" : false,
+            "addressIndex" : 0
+        }
+    },
+    {
+        "change_address" : false,
+        "bip32_path" : {
+            "change" : false,
+            "addressIndex" : 0
+        }
+    }],
+    "unsigned_tx" : "0100000001dd992826b3cfa901ad3b9c34a3185ecaade69305cc96e3e872105ebfa08a78870000000000ffffffff0240420f000000000000001976a914d28de25c20117c4f69b9ae85b31184817731609388ac9c7fbc1d0000000000001976a9142fec8e38220f5d6edbad1147045dd1e065ed6e7388ac000000000000000001ffffffffffffffff00000000ffffffff00"
+}

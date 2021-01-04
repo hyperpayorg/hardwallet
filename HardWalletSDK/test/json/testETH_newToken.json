@@ -1,0 +1,30 @@
+{
+    "main_path" : "m/44'/60'/0'",
+    "chainID" : 1,
+    "ETH" : {
+        "nonce" : 13,
+        "gasLimit" : 310000,
+        "gasPriceInWei" : "10000000000",
+        "to" : "0xef31DEc147DCDcd64F6a0ABFA7D441B62A216BC9",
+        "valueInWei" : "500000000000000",
+        "data" : "4A75626974657257616C6C6574",
+        "bip32_path" : {
+            "change" : false,
+            "addressIndex" : 0
+        }
+    },
+    "ERC20" : {
+        "nonce" : 12,
+        "gasLimit" : 150000,
+        "gasPriceInWei" : "10000000000",
+        "token_to" : "0xef31DEc147DCDcd64F6a0ABFA7D441B62A216BC9",
+        "token_value" : "1234567890123456789",
+        "tokenName" : "RVT",
+        "dp" : 18,
+        "contract_address" : "0x3d1ba9be9f66b8ee101911bc36d3fb562eac2244",
+        "bip32_path" : {
+            "change" : false,
+            "addressIndex" : 0
+        }
+    }
+}

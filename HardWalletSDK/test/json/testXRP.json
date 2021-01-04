@@ -1,0 +1,37 @@
+{
+    "main_path" : "m/44'/144'/0'",
+    "XRP" : {
+        "type" : 0,
+        "account" : "r9LqNeG6qHxjeUocjvVki2XR35weJ9mZgQ",
+        "fee" : "10",
+        "sequence" : "1",
+        "accountTxnID" : "-",
+        "flags" : "2147483648",
+        "lastLedgerSequence" : "0",
+        "memo" : {
+            "type" : "http://example.eom/memo/generic",
+            "data" : "rent",
+            "format" : "text/plain"
+        },
+        "sourceTag" : "-",
+        "0" : {
+            "type" : 0,
+            "amount" : {
+                "currency" : "-",
+                "value" : "1000",
+                "issuer" : "-"
+            },
+            "destination" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+            "destinationTag" : "0",
+            "invoiceID" : "-",
+            "sendMax" : {
+            },
+            "deliverMin" : {
+            }
+        },
+        "bip32_path" : {
+            "change" : false,
+            "addressIndex" : 0
+        }
+    }
+}

@@ -1,0 +1,4 @@
+[submodule "deps/json"]
+	path = deps/json
+	url = https://github.com/nlohmann/json.git
+	branch = release/3.6.1

@@ -1,0 +1,33 @@
+{
+    "ver" : "01000000",
+    "p2sh-segwit" : false,
+    "main_path" : "m/44'/88'/0'",
+    "inputs" : [
+    {
+        "preHash" : "ae75322df7b9205db681c8d8795eb1beb2f5966050171e9d19a863383e23c5d0",
+        "preIndex" : 0,
+        "amount" : 980000000,
+        "bip32_path" : {
+            "change" : false,
+            "addressIndex" : 0
+        }
+    }],
+    "outputs" : [
+    {
+        "address" : "QfKNgG2LD854nKCLD2ArDnbJ8iY4EmWC5u",
+        "amount" : 970000000,
+        "change_address" : true,
+        "bip32_path" : {
+            "change" : false,
+            "addressIndex" : 0
+        }
+    }],
+    "lock_time" : 0,
+    "QRC20_contractAddr": "Qiht6buX71CQj9nooTjZ1mpQMpC8F9Q4eE",
+    "QRC20_decimal": 8,
+    "QRC20_symbol" : "HPY",
+    "gasLimit": 250000,
+    "gasPrice": 40,
+    "QRC20_to" : "QfKNgG2LD854nKCLD2ArDnbJ8iY4EmWC5u",
+    "QRC20_amount" : "1000"
+}

@@ -1,0 +1,21 @@
+#!/bin/bash
+#
+# This script builds a fat static library for iOS devices and simulators.
+#
+
+set -e
+
+echo -e "\n\nBuilding for iOS Device..."
+mkdir -p build/ios-dev
+cmake -H. -Bbuild/ios-dev -DCMAKE_TOOLCHAIN_FILE=cmake/ios.toolchain.cmake -DIOS_PLATFORM=OS -DIOS_DEPLOYMENT_TARGET=10.0 -DCMAKE_BUILD_TYPE=Release
+make -C build/ios-dev
+
+echo -e "\nBuilding for iOS Simulator..."
+mkdir -p build/ios-sim
+cmake -H. -Bbuild/ios-sim -DCMAKE_TOOLCHAIN_FILE=cmake/ios.toolchain.cmake -DIOS_PLATFORM=SIMULATOR64 -DIOS_DEPLOYMENT_TARGET=10.0 -DCMAKE_BUILD_TYPE=Release
+make -C build/ios-sim
+
+echo -e "\n\nFattenning binary..."
+mkdir -p build/ios
+xcrun lipo -create -output build/ios/libJUB_SDK.a build/ios-sim/src/libJUB_SDK.a build/ios-dev/src/libJUB_SDK.a
+xcrun lipo -info build/ios/libJUB_SDK.a

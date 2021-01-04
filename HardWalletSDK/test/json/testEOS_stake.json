@@ -1,0 +1,25 @@
+{
+    "main_path" : "m/44'/194'/0'",
+    "EOS" : {
+        "chainID" : "",
+        "expiration" : "900",
+        "referenceBlockId" : "052de5f233dc30d0a11a09d063f43181bea9ec44bc66b33c24d9198dc6e4c15c",
+        "referenceBlockTime" : "2019-10-28 17:03:24",
+        "actions" : [
+        {
+            "type" : 1,
+            "currency" : "eosio",
+            "name" : "delegatebw",
+            "1" : {
+                "from" : "ftsafetest55",
+                "receiver" : "ftsafetest55",
+                "stake_cpu_quantity" : "0.7000 EOS",
+                "stake_net_quantity" : "0.3000 EOS"
+            }
+        }],
+        "bip32_path" : {
+            "change" : false,
+            "addressIndex" : 0
+        }
+    }
+}

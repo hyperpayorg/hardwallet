@@ -1,0 +1,27 @@
+编译工程文件已经迁移到CMake
+1.安装CMake 3+
+2.Mac和Linux需要安装hidapi
+2.mkdir build & cd build & cmake ..
+3.make
+
+libJUB_SDK.a for iOS compiling:
+1. mkdir build
+2. cd build
+3. > cmake .. -G Xcode -DCMAKE_TOOLCHAIN_FILE=../cmake/ios.toolchain.cmake -DPLATFORM=OS64COMBINED
+4. > cmake --build . --config Release --target
+or simply proceed
+> sh ./tools/ios-build
+
+JubSDK.framework for iOS compiling:
+1. mkdir build
+2. cd build
+3. > cmake ../JubSDKCore -G Xcode -DCMAKE_TOOLCHAIN_FILE=../cmake/ios.toolchain.cmake -DPLATFORM=OS64COMBINED
+4. > cmake --build . --config Release --target
+
+deps
+
+8f421aa7488d2fb276f1611724139695ddab524be508b739cd6a3a782740d43610ce0834500e04bdf0ad1831c649fe7590cf667ed5beb5259cf5a89e23611b21
+
+
+0xf888038504a817c80082627094f44b0e1b808e904991a580915c6a99db90f8975680a42d06177a000000000000000000000000cee285494b7f9fc1ea5aa9c447d14e0ab1b0c4db2aa08f421aa748df7fb276f1611724d3fe95ddab524be5daf7b9cd6a3a782740d436a012de8dfd7
+a0fbfbff0ad1fb9ef6bff7fb3cffefef7befdb59cf5a89e23611b21

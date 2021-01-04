@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\device">
+      <UniqueIdentifier>{ea6878b4-5daf-4c1a-9656-09aa49b8d304}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\device">
+      <UniqueIdentifier>{dd032b90-1d21-433b-936d-8c1e8feb9e1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\token">
+      <UniqueIdentifier>{b8d6da8a-9ddd-4bf3-b59b-6a3a0c4a031e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\token">
+      <UniqueIdentifier>{f5e56ceb-43a8-4aa3-93d2-dc4b4ad97496}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\context">
+      <UniqueIdentifier>{43ffabbd-5757-4c12-92d1-52cb2d842216}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\context">
+      <UniqueIdentifier>{bf94f2db-d25e-45a9-8e8e-74eff14d9f6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\libBTC">
+      <UniqueIdentifier>{102f53c1-f2a3-4653-b6a8-366b56302f6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="deps">
+      <UniqueIdentifier>{2410a02c-ba37-4d84-a589-d6e010cdc706}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="deps\polarssl">
+      <UniqueIdentifier>{56cb9b09-6f4e-4831-bf86-79527bcd3377}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\utility">
+      <UniqueIdentifier>{426ad477-8275-4fcf-a2f5-7a1bcfc5a387}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\token\interface">
+      <UniqueIdentifier>{0ae04d6f-2cfb-4a84-b6bc-a5cb3fd33b07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\libETH">
+      <UniqueIdentifier>{8a032be4-05ba-4fd5-95e6-cdd34c78c3c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\libETH">
+      <UniqueIdentifier>{616f0cc6-9d7e-4e1a-abfe-6e62edcfe3ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\libBCH">
+      <UniqueIdentifier>{3036bf01-72ff-4f32-abc8-5ac392a1174e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="deps\bitcoinABC">
+      <UniqueIdentifier>{e99acf75-bbac-4f15-85d1-36019a815603}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="deps\bigint">
+      <UniqueIdentifier>{0c52c268-4d07-481d-9946-9ab366daa087}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="deps\libbitcoin">
+      <UniqueIdentifier>{f762187f-e2e5-44a7-8e5a-81d9861d22c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="deps\libbitcoin\machine">
+      <UniqueIdentifier>{ee0a82ac-c39d-42d3-8aab-a09bbfaa670b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\utility">
+      <UniqueIdentifier>{f8b96ea8-ffe6-4c0e-ae0f-9ab227daf0e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="deps\hidapi">
+      <UniqueIdentifier>{5231c9d7-bbb0-4b17-bc85-3aba336053f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="deps\mSIGNA">
+      <UniqueIdentifier>{1dfececb-27d8-4435-a7e0-65ed524c3267}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="deps\mSIGNA\stdutils">
+      <UniqueIdentifier>{5b44ee30-b93d-4a10-b0d5-6d10ac4707fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="deps\airbitz-core">
+      <UniqueIdentifier>{5f8a8316-2399-4b82-ba65-fc957a0aba93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="deps\airbitz-core\abcd">
+      <UniqueIdentifier>{0d56ad78-1337-4947-875a-531956624e05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="deps\airbitz-core\abcd\util">
+      <UniqueIdentifier>{faa7c1ee-15aa-446a-88c8-54281bb015b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="deps\bitcoin">
+      <UniqueIdentifier>{68f1fb04-6c8a-423e-a5a8-f150fae435ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="deps\bitcoin\compat">
+      <UniqueIdentifier>{55919a36-07ee-422b-9f4d-c78f744221e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="deps\bitcoin\crypto">
+      <UniqueIdentifier>{0376e858-ffa8-4494-b438-a6aff30f1c14}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\include\JUB_SDK.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\device\ApduBuilder.hpp">
+      <Filter>Header Files\device</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\device\DeviceTypeBase.hpp">
+      <Filter>Header Files\device</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\device\JubiterHidDevice.hpp">
+      <Filter>Header Files\device</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\context\ContextBTC.h">
+      <Filter>Header Files\context</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\libBTC\libBTC.hpp">
+      <Filter>Header Files\libBTC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\libBCH\libBCH.hpp">
+      <Filter>Header Files\libBCH</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\libHC\libHC.h">
+      <Filter>Header Files\libHC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\libEOS\libEOS.hpp">
+      <Filter>Header Files\libHC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\trezor-crypto\include\TrezorCrypto\">
+      <Filter>deps\trezor-crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\utility\xManager.hpp">
+      <Filter>Header Files\context</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\device\Fido.h">
+      <Filter>Header Files\device</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\token\JubiterBLDImpl.h">
+      <Filter>Header Files\token</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\token\interface\BTCTokenInterface.hpp">
+      <Filter>Header Files\token\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\token\interface\ETHTokenInterface.hpp">
+      <Filter>Header Files\token\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\token\interface\TokenInterface.hpp">
+      <Filter>Header Files\token\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\context\Context.h">
+      <Filter>Header Files\context</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\context\ContextETH.h">
+      <Filter>Header Files\context</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\libETH\ERC20Abi.h">
+      <Filter>Header Files\libETH</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\libBCH\libBCH.hpp">
+      <Filter>Header Files\libBCH</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\device\DeviceIOLogHelper.hpp">
+      <Filter>Header Files\device</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\deps\bigint\BigInteger.hh">
+      <Filter>deps\bigint</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\deps\bigint\BigIntegerAlgorithms.hh">
+      <Filter>deps\bigint</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\deps\bigint\BigIntegerLibrary.hh">
+      <Filter>deps\bigint</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\deps\bigint\BigIntegerUtils.hh">
+      <Filter>deps\bigint</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\deps\bigint\BigUnsigned.hh">
+      <Filter>deps\bigint</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\deps\bigint\BigUnsignedInABase.hh">
+      <Filter>deps\bigint</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\deps\bigint\NumberlikeArray.hh">
+      <Filter>deps\bigint</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\deps\bitcoinABC\cashaddr.h">
+      <Filter>deps\bitcoinABC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\deps\bitcoin\base58.h">
+      <Filter>deps\bitcoin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\deps\bitcoin\bech32.h">
+      <Filter>deps\bitcoin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\deps\bitcoin\hash.h">
+      <Filter>deps\bitcoin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\deps\bitcoin\compat\byteswap.h">
+      <Filter>deps\bitcoin\compat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\deps\bitcoin\compat\endian.h">
+      <Filter>deps\bitcoin\compat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\deps\libbitcoin\machine\opcode.hpp">
+      <Filter>deps\libbitcoin\machine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\utility\Apdu.hpp">
+      <Filter>Header Files\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\utility\Singleton.h">
+      <Filter>Header Files\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\utility\util.h">
+      <Filter>Header Files\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\deps\mSIGNA\stdutils\uchar_vector.h">
+      <Filter>deps\mSIGNA\stdutils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\deps\airbitz-core\abcd\util\Data.hpp">
+      <Filter>deps\airbitz-core\abcd\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\deps\bitcoin\crypto\common.h">
+      <Filter>deps\bitcoin\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\JUB_SDK_BTC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\JUB_SDK_DEV.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\JUB_SDK_DEV_BLE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\JUB_SDK_DEV_HID.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\JUB_SDK_ETH.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\context\ContextHC.h">
+      <Filter>Header Files\context</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\token\interface\HCTokenInterface.hpp">
+      <Filter>Header Files\token\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\JUB_SDK_Hcash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\src\device\ApduBuilder.cpp">
+      <Filter>Source Files\device</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\device\JubiterHidDevice.cpp">
+      <Filter>Source Files\device</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\context\ContextBTC.cpp">
+      <Filter>Source Files\context</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\deps\polarssl\md.c">
+      <Filter>deps\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\deps\polarssl\md_wrap.c">
+      <Filter>deps\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\deps\polarssl\md2.c">
+      <Filter>deps\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\deps\polarssl\md4.c">
+      <Filter>deps\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\deps\polarssl\md5.c">
+      <Filter>deps\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\deps\polarssl\platform.c">
+      <Filter>deps\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\deps\polarssl\ripemd160.c">
+      <Filter>deps\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\deps\polarssl\sha1.c">
+      <Filter>deps\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\deps\polarssl\sha256.c">
+      <Filter>deps\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\deps\polarssl\sha512.c">
+      <Filter>deps\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\utility\util.cpp">
+      <Filter>Source Files\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\device\Fido.cpp">
+      <Filter>Source Files\device</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\token\JubiterBLDImpl.cpp">
+      <Filter>Source Files\token</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\token\JubiterBLDImplBTC.cpp">
+      <Filter>Source Files\token</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\token\JubiterBLDImplETH.cpp">
+      <Filter>Source Files\token</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\context\Context.cpp">
+      <Filter>Source Files\context</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\context\ContextETH.cpp">
+      <Filter>Source Files\context</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\libETH\ERC20Abi.cpp">
+      <Filter>Source Files\libETH</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\deps\bitcoin\base58.cpp">
+      <Filter>deps\bitcoin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\deps\bitcoin\bech32.cpp">
+      <Filter>deps\bitcoin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\deps\bigint\BigInteger.cc">
+      <Filter>deps\bigint</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\deps\bigint\BigIntegerAlgorithms.cc">
+      <Filter>deps\bigint</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\deps\bigint\BigIntegerUtils.cc">
+      <Filter>deps\bigint</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\deps\bigint\BigUnsigned.cc">
+      <Filter>deps\bigint</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\deps\bigint\BigUnsignedInABase.cc">
+      <Filter>deps\bigint</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\deps\bitcoinABC\cashaddr.cc">
+      <Filter>deps\bitcoinABC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\context\ContextHC.cpp">
+      <Filter>Source Files\context</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\JUB_SDK_Hcash.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\token\JubiterBLDImplHC.cpp">
+      <Filter>Source Files\token</Filter>
+    <ClCompile Include="..\..\..\..\deps\airbitz-core\abcd\util\Data.cpp">
+      <Filter>deps\airbitz-core\abcd\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\JUB_SDK_BTC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\JUB_SDK_DEV.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\JUB_SDK_DEV_BLE.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\JUB_SDK_DEV_HID.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\JUB_SDK_ETH.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\JUB_SDK_COMM.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\..\..\deps\hidapi\libhidapi\x64\hidapi_vs2017.lib">
+      <Filter>deps\hidapi</Filter>
+    </Library>
+  </ItemGroup>
+</Project>

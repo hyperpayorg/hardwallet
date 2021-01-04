@@ -1,0 +1,41 @@
+{
+    "ver" : "01000000",
+    "trans_type" : 2,
+    "main_path" : "m/45'",
+    "m" : 2,
+    "n" : 2,
+    "cosigners" : [
+    "dpubZBsUJ61VcMv8uikbuFBeAQ9798GUqDDJGKqMjWWRpXCCM9PmoET9UCH4DvBgY47t5WCq1UvFou1PoXcPcz7BP4Ws74HBND7mCBTb5Wre25Z"
+    ],
+    "inputs" : [
+    {
+        "amount" : 200000000,
+        "bip32_path" : {
+            "change" : false,
+            "addressIndex" : 0
+        }
+    },
+    {
+        "amount" : 1000000000,
+        "bip32_path" : {
+            "change" : false,
+            "addressIndex" : 0
+        }
+    }],
+    "outputs" : [
+    {
+        "change_address" : true,
+        "bip32_path" : {
+            "change" : false,
+            "addressIndex" : 0
+        }
+    },
+    {
+        "change_address" : false,
+        "bip32_path" : {
+            "change" : false,
+            "addressIndex" : 0
+        }
+    }],
+    "unsigned_tx" : "010000000209f22e9e9cfc69725218ed9de8d5f938bced3654744363cfaa472ee0b7b135fe0000000000ffffffffdd783db2db5cd5305b59401e46c0c2c630aa7a35f40627d2745fd78ed50c1e650100000000ffffffff0200e9a43500000000000017a91490b6f65838b150da650eed99cf7e77d3eee5e1ed8700c2eb0b0000000000001976a914b813b11086af4242589c20196b1ab516834fa32188ac000000000000000002ffffffffffffffff00000000ffffffff91483045022100bb6a137f4002905e887c8a10ccb82ac0704e885046bd6858eb8ad42fcac75d30022020548bcd6dcee6116edfa9460b9af2ca5d7eb739df3a01bc771c2200407d39f301475221035a8ef07f654ab0c2115416898ae1b66fb38638142c685dfa6608de53feb186d12103dc2c393471134e1f851e560d64f67241bf8c53b0efc1f85404496867c80bc12b52aeffffffffffffffff00000000ffffffff91483045022100af63e0cc12387713ecddf1ee428a7a3c5a5457d9a01346a785449af48091a92602201444177718ffba1f842c9394f2919ab118b384c6632d2d9c77d35b88c21fab9701475221035a8ef07f654ab0c2115416898ae1b66fb38638142c685dfa6608de53feb186d12103dc2c393471134e1f851e560d64f67241bf8c53b0efc1f85404496867c80bc12b52ae"
+}

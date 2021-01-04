@@ -1,0 +1,35 @@
+{
+    "ver" : "01000000",
+    "forkid" : 64,
+    "main_path" : "m/44'/0'/0'",
+    "inputs" : [
+    {
+        "preHash" : "27e1e2e5ac5341abe893d2f4ef89b1b4a94cbe71fc0e3198ccf8e04847ab0ffd",
+        "preIndex" : 1,
+        "amount" : 1237280,
+        "bip32_path" : {
+            "change" : false,
+            "addressIndex" : 0
+        }
+    }],
+    "outputs" : [
+    {
+        "address" : "bitcoincash:qz6zrmzswc2y926g34gjdz77urjlfv24yqs9xmqdru",
+        "amount" : 100000,
+        "change_address" : false,
+        "bip32_path" : {
+            "change" : false,
+            "addressIndex" : 1
+        }
+    },
+    {
+        "address" : "bitcoincash:qrpcjnmaauzq5rlu9rppcktllspnknypgve5r9r5r0",
+        "amount" : 1127280,
+        "change_address" : false,
+        "bip32_path" : {
+            "change" : false,
+            "addressIndex" : 0
+        }
+    }],
+    "lock_time" : 0
+}

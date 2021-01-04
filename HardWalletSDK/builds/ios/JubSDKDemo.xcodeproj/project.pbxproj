@@ -1,0 +1,437 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6732D37022C1C4A800FB9A5A /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6732D36F22C1C4A800FB9A5A /* CoreBluetooth.framework */; };
+		6732D3D122C2149E00FB9A5A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6732D3C522C2149D00FB9A5A /* AppDelegate.m */; };
+		6732D3D222C2149E00FB9A5A /* JubSDKDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6732D3C722C2149D00FB9A5A /* JubSDKDemo.xcdatamodeld */; };
+		6732D3D322C2149E00FB9A5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6732D3C922C2149D00FB9A5A /* main.m */; };
+		6732D3D422C2149E00FB9A5A /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6732D3CA22C2149E00FB9A5A /* ViewController.mm */; };
+		6732D3D622C2149E00FB9A5A /* Notification.m in Sources */ = {isa = PBXBuildFile; fileRef = 6732D3CE22C2149E00FB9A5A /* Notification.m */; };
+		6732D3D722C2149E00FB9A5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6732D3CF22C2149E00FB9A5A /* Assets.xcassets */; };
+		6732D3D822C2149E00FB9A5A /* DevicePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6732D3D022C2149E00FB9A5A /* DevicePool.m */; };
+		6732D3DD22C214AF00FB9A5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6732D3D922C214AF00FB9A5A /* LaunchScreen.storyboard */; };
+		6732D3DE22C214AF00FB9A5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6732D3DB22C214AF00FB9A5A /* Main.storyboard */; };
+		67E6A69422C321A4009FA2CE /* Object.m in Sources */ = {isa = PBXBuildFile; fileRef = 67E6A69322C321A4009FA2CE /* Object.m */; };
+		67E6A6A322C356D3009FA2CE /* JubSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6732D36622C0CC3B00FB9A5A /* JubSDK.framework */; };
+		67E6A6A422C356D3009FA2CE /* JubSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6732D36622C0CC3B00FB9A5A /* JubSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		67E6A6A522C356D4009FA2CE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				67E6A6A422C356D3009FA2CE /* JubSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6732D36622C0CC3B00FB9A5A /* JubSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = JubSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6732D36F22C1C4A800FB9A5A /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		6732D3C522C2149D00FB9A5A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../../JubSDKDemo/AppDelegate.m; sourceTree = "<group>"; };
+		6732D3C622C2149D00FB9A5A /* DevicePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DevicePool.h; path = ../../JubSDKDemo/DevicePool.h; sourceTree = "<group>"; };
+		6732D3C822C2149D00FB9A5A /* JubSDKDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JubSDKDemo.xcdatamodel; sourceTree = "<group>"; };
+		6732D3C922C2149D00FB9A5A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../../JubSDKDemo/main.m; sourceTree = "<group>"; };
+		6732D3CA22C2149E00FB9A5A /* ViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ViewController.mm; path = ../../JubSDKDemo/ViewController.mm; sourceTree = "<group>"; };
+		6732D3CB22C2149E00FB9A5A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../../JubSDKDemo/Info.plist; sourceTree = "<group>"; };
+		6732D3CC22C2149E00FB9A5A /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../../JubSDKDemo/ViewController.h; sourceTree = "<group>"; };
+		6732D3CD22C2149E00FB9A5A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../JubSDKDemo/AppDelegate.h; sourceTree = "<group>"; };
+		6732D3CE22C2149E00FB9A5A /* Notification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Notification.m; path = ../../JubSDKDemo/Notification.m; sourceTree = "<group>"; };
+		6732D3CF22C2149E00FB9A5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../JubSDKDemo/Assets.xcassets; sourceTree = "<group>"; };
+		6732D3D022C2149E00FB9A5A /* DevicePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DevicePool.m; path = ../../JubSDKDemo/DevicePool.m; sourceTree = "<group>"; };
+		6732D3DA22C214AF00FB9A5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../JubSDKDemo/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6732D3DC22C214AF00FB9A5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../JubSDKDemo/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6732D43622C21A3300FB9A5A /* libJubSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libJubSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6732D43822C21B7900FB9A5A /* libFTTransmission.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFTTransmission.a; path = ../../deps/bleTransmit/ios/libFTTransmission.a; sourceTree = "<group>"; };
+		674E805322BDFB68009332EB /* JubSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JubSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		67E6A69022C3181E009FA2CE /* Notification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Notification.h; path = ../../JubSDKDemo/Notification.h; sourceTree = "<group>"; };
+		67E6A69322C321A4009FA2CE /* Object.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Object.m; path = ../../JubSDKDemo/Object.m; sourceTree = "<group>"; };
+		67E6A69522C321FB009FA2CE /* Object.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Object.h; path = ../../JubSDKDemo/Object.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		674E805022BDFB68009332EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67E6A6A322C356D3009FA2CE /* JubSDK.framework in Frameworks */,
+				6732D37022C1C4A800FB9A5A /* CoreBluetooth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6732D3C422C2148600FB9A5A /* JubSDKDemo */ = {
+			isa = PBXGroup;
+			children = (
+				6732D3CD22C2149E00FB9A5A /* AppDelegate.h */,
+				6732D3C522C2149D00FB9A5A /* AppDelegate.m */,
+				6732D3CF22C2149E00FB9A5A /* Assets.xcassets */,
+				6732D3C622C2149D00FB9A5A /* DevicePool.h */,
+				6732D3D022C2149E00FB9A5A /* DevicePool.m */,
+				6732D3CB22C2149E00FB9A5A /* Info.plist */,
+				6732D3D922C214AF00FB9A5A /* LaunchScreen.storyboard */,
+				6732D3C722C2149D00FB9A5A /* JubSDKDemo.xcdatamodeld */,
+				6732D3C922C2149D00FB9A5A /* main.m */,
+				6732D3DB22C214AF00FB9A5A /* Main.storyboard */,
+				6732D3CC22C2149E00FB9A5A /* ViewController.h */,
+				6732D3CA22C2149E00FB9A5A /* ViewController.mm */,
+				67E6A69022C3181E009FA2CE /* Notification.h */,
+				6732D3CE22C2149E00FB9A5A /* Notification.m */,
+				67E6A69522C321FB009FA2CE /* Object.h */,
+				67E6A69322C321A4009FA2CE /* Object.m */,
+			);
+			name = JubSDKDemo;
+			sourceTree = "<group>";
+		};
+		674E804A22BDFB68009332EB = {
+			isa = PBXGroup;
+			children = (
+				6732D3C422C2148600FB9A5A /* JubSDKDemo */,
+				674E807322BE1682009332EB /* Frameworks */,
+				674E805422BDFB68009332EB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		674E805422BDFB68009332EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				674E805322BDFB68009332EB /* JubSDKDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		674E807322BE1682009332EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6732D43822C21B7900FB9A5A /* libFTTransmission.a */,
+				6732D43622C21A3300FB9A5A /* libJubSDK.a */,
+				6732D36F22C1C4A800FB9A5A /* CoreBluetooth.framework */,
+				6732D36622C0CC3B00FB9A5A /* JubSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		674E805222BDFB68009332EB /* JubSDKDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 674E806C22BDFB6A009332EB /* Build configuration list for PBXNativeTarget "JubSDKDemo" */;
+			buildPhases = (
+				674E804F22BDFB68009332EB /* Sources */,
+				674E805022BDFB68009332EB /* Frameworks */,
+				674E805122BDFB68009332EB /* Resources */,
+				67E6A6A522C356D4009FA2CE /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JubSDKDemo;
+			productName = JubSDKDemo;
+			productReference = 674E805322BDFB68009332EB /* JubSDKDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		674E804B22BDFB68009332EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				DefaultBuildSystemTypeForWorkspace = Original;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = ft;
+				TargetAttributes = {
+					674E805222BDFB68009332EB = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 674E804E22BDFB68009332EB /* Build configuration list for PBXProject "JubSDKDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 674E804A22BDFB68009332EB;
+			productRefGroup = 674E805422BDFB68009332EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				674E805222BDFB68009332EB /* JubSDKDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		674E805122BDFB68009332EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6732D3DD22C214AF00FB9A5A /* LaunchScreen.storyboard in Resources */,
+				6732D3D722C2149E00FB9A5A /* Assets.xcassets in Resources */,
+				6732D3DE22C214AF00FB9A5A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		674E804F22BDFB68009332EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6732D3D422C2149E00FB9A5A /* ViewController.mm in Sources */,
+				6732D3D622C2149E00FB9A5A /* Notification.m in Sources */,
+				6732D3D122C2149E00FB9A5A /* AppDelegate.m in Sources */,
+				6732D3D822C2149E00FB9A5A /* DevicePool.m in Sources */,
+				67E6A69422C321A4009FA2CE /* Object.m in Sources */,
+				6732D3D322C2149E00FB9A5A /* main.m in Sources */,
+				6732D3D222C2149E00FB9A5A /* JubSDKDemo.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6732D3D922C214AF00FB9A5A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6732D3DA22C214AF00FB9A5A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		6732D3DB22C214AF00FB9A5A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6732D3DC22C214AF00FB9A5A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		674E806A22BDFB6A009332EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		674E806B22BDFB6A009332EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		674E806D22BDFB6A009332EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S47T4UESP3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					TARGET_OS_IPHONE,
+				);
+				HEADER_SEARCH_PATHS = (
+					../../include/,
+					../../JubSDKCore/,
+				);
+				INFOPLIST_FILE = ../../JubSDKDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = ../../deps/bleTransmit/ios/;
+				OTHER_CODE_SIGN_FLAGS = "-o library";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ftsafe.JubSDKDemos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		674E806E22BDFB6A009332EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S47T4UESP3;
+				GCC_PREPROCESSOR_DEFINITIONS = TARGET_OS_IPHONE;
+				HEADER_SEARCH_PATHS = (
+					../../include/,
+					../../JubSDKCore/,
+				);
+				INFOPLIST_FILE = ../../JubSDKDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = ../../deps/bleTransmit/ios/;
+				OTHER_CODE_SIGN_FLAGS = "-o library";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ftsafe.JubSDKDemos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		674E804E22BDFB68009332EB /* Build configuration list for PBXProject "JubSDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				674E806A22BDFB6A009332EB /* Debug */,
+				674E806B22BDFB6A009332EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		674E806C22BDFB6A009332EB /* Build configuration list for PBXNativeTarget "JubSDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				674E806D22BDFB6A009332EB /* Debug */,
+				674E806E22BDFB6A009332EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6732D3C722C2149D00FB9A5A /* JubSDKDemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6732D3C822C2149D00FB9A5A /* JubSDKDemo.xcdatamodel */,
+			);
+			currentVersion = 6732D3C822C2149D00FB9A5A /* JubSDKDemo.xcdatamodel */;
+			name = JubSDKDemo.xcdatamodeld;
+			path = ../../JubSDKDemo/JubSDKDemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 674E804B22BDFB68009332EB /* Project object */;
+}

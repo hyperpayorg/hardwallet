@@ -1,0 +1,59 @@
+{
+    "main_path" : "m/44'/60'/0'",
+    "chainID" : 3,
+    "ETH" : {
+        "nonce" : 2,
+        "gasLimit" : 25200,
+        "gasPriceInWei" : "17000000000",
+        "to" : "0xf44b0e1b808e904991a580915c6a99db90f89756",
+        "valueInWei" : "",
+        "bip32_path" : {
+            "change" : false,
+            "addressIndex" : 0
+        }
+    },
+    "multiSig" : {
+        "contract_address" : "0xc167bbb0bb38e33e7055064e5ee738ee22cbd174",
+        "3": [
+            {
+                "methodID": "0xc01a8c84",
+                "transactionID": "0x050cdc001543a2e7c74ba06b345285e9c71fb0b4cd94d410287624dac51655f6"
+            },
+            {
+                "methodID": "0xee22610b",
+                "transactionID": "0x050cdc001543a2e7c74ba06b345285e9c71fb0b4cd94d410287624dac51655f6"
+            },
+            {
+                "methodID": "0x20ea8d86",
+                "transactionID": "0x050cdc001543a2e7c74ba06b345285e9c71fb0b4cd94d410287624dac51655f6"
+            }
+        ],
+        "5": [
+            {
+                "methodID": "0xc6427474",
+                "address" : "0xd5e27985e3e7c008af184b9b78ddd9b75d32698c",
+                "amount"  : "100000000000000",
+                "data" : "0x00"
+            },
+            {
+                "methodID": "0xc6427474",
+                "address" : "0x3d1ba9be9f66b8ee101911bc36d3fb562eac2244",
+                "amount"  : "0",
+                "ERC20" : {
+                    "nonce" : 12,
+                    "gasLimit" : 150000,
+                    "gasPriceInWei" : "10000000000",
+                    "token_to" : "0xef31DEc147DCDcd64F6a0ABFA7D441B62A216BC9",
+                    "token_value" : "1234567890123456789",
+                    "tokenName" : "RVT",
+                    "dp" : 18,
+                    "contract_address" : "0x3d1ba9be9f66b8ee101911bc36d3fb562eac2244",
+                    "bip32_path" : {
+                        "change" : false,
+                        "addressIndex" : 0
+                    }
+                }
+            }
+        ]
+    }
+}

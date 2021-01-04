@@ -1,0 +1,37 @@
+{
+    "ver" : "01000000",
+    "p2sh-segwit" : false,
+    "p2sh-multisig" : true,
+    "main_path" : "m/45'",
+    "m" : 3,
+    "n" : 5,
+    "cosigners" : [
+    "xpub6913UHqdFEA64vWd24kaUJqQzYbTSGi2hE3iaWTSDbPXCPnmYLqndQQimUWdFwMLabrdCRguKpxHYV7f34ZVjTfWnpdW9MGkKZMxRmvxAPN",
+    "xpub685ZS5kT4EoUhFPnMyPNd5j17YVR1UNFKznkwrPrRVctuSdDZc4SmdW2MMfQV8cSks4zwmnb4N6QAoLTK9KfiGZbhER1FdbSX8dH3mPHpvC",
+    "xpub697Ju8p99sLaWGn6JkthjT4W2jyEnYcpGJXdCf5mbFcm3iDzkev3f2nXArikSmR7eeDL9BPAvT2wKcPyYRaCzi2t5dsN2HhmocMrkA9v3Jv",
+    "xpub68q3eQxFyNs774sgXtPqgwVGBQmSLN3EmQQQQ4hrjQEx5u4jGLkMHTPmj5YF8QdvDW2eL6YU2H4hF13skBaqdABCihSo8bAZtuqUn7sXtpN"],
+    "inc_tx" : "01000000010209ff393c78bac636389ee007d403c157c427f0d8dba2246dd7ed2f2981114100000000f80047304402205424f87651fd1cba0a6fff0fbd37884357f592053a8323c4dc4c04db51ca8818022066b9f6f8d4efcf86fa1bb00e2a11252f445e82c73d1a9950f744f5003b6ef54a414cad53210303915db04a8bb2c44ec52489618a612363c46291143d6117dec01dc40dfec74221033910482f94265d12abf92ad6c356b1890a71bd7ec79b3b545b495067bfa528222103437096b3bbd1787066da37cb6e49150287191983c5368bb276d973fdbd2761402103d0aa1969624f0a9bc6f67eae7161c285380cbecad0a611f5e19116fbc1e7278e2103e754d9f428e3dc137d930a2e0f6c1c35ff1fa0069d4440a5feef9bcf3460996155aeffffffff01e80300000000000017a914d95d169cff8506ea73ae466bda14b3545c0c6cf68700000000",
+    "inputs" : [
+    {
+        "multisig" : true,
+        "preHash" : "411181292fedd76d24a2dbd8f027c457c103d407e09e3836c6ba783c39ff0902",
+        "preIndex" : 0,
+        "amount" : 6000,
+        "bip32_path" : {
+            "change" : false,
+            "addressIndex" : 0
+        }
+    }],
+    "outputs" : [
+    {
+        "multisig" : true,
+        "address" : "bitcoincash:prv4695ul7zsd6nn4erxhks5kd29crrv7cvu0r9sx6",
+        "amount" : 1000,
+        "change_address" : false,
+        "bip32_path" : {
+            "change" : false,
+            "addressIndex" : 0
+        }
+    }],
+    "lock_time" : 0
+}

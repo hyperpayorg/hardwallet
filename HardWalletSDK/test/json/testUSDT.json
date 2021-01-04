@@ -1,0 +1,36 @@
+{
+    "ver" : "01000000",
+    "main_path" : "m/44'/0'/0'",
+    "inputs" : [
+    {
+        "preHash" : "2a2e910f9fb2b04f7f1ddbfb4ab05785250c2b395f572ce591167c8451f0891e",
+        "preIndex" : 1,
+        "amount" : 4944420633545,
+        "bip32_path" : {
+            "change" : false,
+            "addressIndex" : 0
+        }
+    },
+    {
+        "preHash" : "0fe4fafd846b18fe545bbc2dcb70ecb1290ec0de6219cd2299cd0a1561c8d583",
+        "preIndex" : 0,
+        "amount" : 10492,
+        "bip32_path" : {
+            "change" : true,
+            "addressIndex" : 0
+        }
+    }],
+    "outputs" : [
+    {
+        "address" : "1JpuFuiBfMzm99JzZG4rpZexxjortaH42t",
+        "amount" : 3744400045565,
+        "change_address" : true,
+        "bip32_path" : {
+            "change" : false,
+            "addressIndex" : 0
+        }
+    }],
+    "lock_time" : 0,
+    "USDT_amount" : 100000000000,
+    "USDT_to" : "1EXoDusjGwvnjZUyKkxZ4UHEf77z6A5S4P"
+}

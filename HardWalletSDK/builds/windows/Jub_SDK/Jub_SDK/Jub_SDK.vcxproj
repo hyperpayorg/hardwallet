@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{007D5BC1-AD87-4C25-99D2-5920EE8589A1}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Jub_SDK</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>D:\git.0.39\Jub_SDK_CXX\deps\libbitcoin;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../../include;$(SolutionDir)../../../deps;$(SolutionDir)../../../deps/libbitcoin/formats</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996;4819;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../../include;$(SolutionDir)../../../deps;$(SolutionDir)../../../deps/libbitcoin/compat</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../../include;$(SolutionDir)../../../deps;$(SolutionDir)../../../deps/libbitcoin/formats</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../../deps;$(SolutionDir)../../../deps/bigint;$(SolutionDir)../../../deps/bitcoin;$(SolutionDir)../../../deps/libbitcoin;$(SolutionDir)../../../include</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996;4819;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../../include;$(SolutionDir)../../../deps;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996;4819;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../../include;$(SolutionDir)../../../deps;$(SolutionDir)../../../deps/libbitcoin/compat</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../../include;$(SolutionDir)../../../deps;$(SolutionDir)../../../deps/libbitcoin/formats</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../../include;$(SolutionDir)../../../deps;$(SolutionDir)../../../deps/libbitcoin/machine</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../../include;$(SolutionDir)../../../deps;$(SolutionDir)../../../deps/libbitcoin/utility</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996;4819</DisableSpecificWarnings>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\deps\airbitz-core\abcd\util\Data.hpp" />
+    <ClInclude Include="..\..\..\..\deps\bigint\BigInteger.hh" />
+    <ClInclude Include="..\..\..\..\deps\bigint\BigIntegerAlgorithms.hh" />
+    <ClInclude Include="..\..\..\..\deps\bigint\BigIntegerLibrary.hh" />
+    <ClInclude Include="..\..\..\..\deps\bigint\BigIntegerUtils.hh" />
+    <ClInclude Include="..\..\..\..\deps\bigint\BigUnsigned.hh" />
+    <ClInclude Include="..\..\..\..\deps\bigint\BigUnsignedInABase.hh" />
+    <ClInclude Include="..\..\..\..\deps\bigint\NumberlikeArray.hh" />
+    <ClInclude Include="..\..\..\..\deps\bitcoinABC\cashaddr.h" />
+    <ClInclude Include="..\..\..\..\deps\bitcoin\compat\byteswap.h" />
+    <ClInclude Include="..\..\..\..\deps\bitcoin\compat\endian.h" />
+    <ClInclude Include="..\..\..\..\deps\bitcoin\bech32.h" />
+    <ClInclude Include="..\..\..\..\deps\bitcoin\crypto\common.h" />
+    <ClInclude Include="..\..\..\..\deps\bitcoin\hash.h" />
+    <ClInclude Include="..\..\..\..\deps\libbitcoin\machine\opcode.hpp" />
+    <ClInclude Include="..\..\..\..\deps\mSIGNA\stdutils\uchar_vector.h" />
+    <ClInclude Include="..\..\..\..\trezor-crypto\include\TrezorCrypto\address.h" />
+    <ClInclude Include="..\..\..\..\trezor-crypto\include\TrezorCrypto\aes.h" />
+    <ClInclude Include="..\..\..\..\trezor-crypto\include\TrezorCrypto\base32.h" />
+    <ClInclude Include="..\..\..\..\trezor-crypto\include\TrezorCrypto\base58.h" />
+    <ClInclude Include="..\..\..\..\trezor-crypto\include\TrezorCrypto\bignum.h" />
+    <ClInclude Include="..\..\..\..\trezor-crypto\include\TrezorCrypto\bip32.h" />
+    <ClInclude Include="..\..\..\..\trezor-crypto\include\TrezorCrypto\bip39.h" />
+    <ClInclude Include="..\..\..\..\trezor-crypto\include\TrezorCrypto\blake2b.h" />
+    <ClInclude Include="..\..\..\..\trezor-crypto\include\TrezorCrypto\blake2s.h" />
+    <ClInclude Include="..\..\..\..\trezor-crypto\include\TrezorCrypto\blake256.h" />
+    <ClInclude Include="..\..\..\..\trezor-crypto\include\TrezorCrypto\cash_addr.h" />
+    <ClInclude Include="..\..\..\..\trezor-crypto\include\TrezorCrypto\ed25519-donna\curve25519-donna-32bit.h" />
+    <ClInclude Include="..\..\..\..\trezor-crypto\include\TrezorCrypto\ed25519-donna\curve25519-donna-helpers.h" />
+    <ClInclude Include="..\..\..\..\trezor-crypto\include\TrezorCrypto\ed25519-donna\ed25519-blake2b.h" />
+    <ClInclude Include="..\..\..\..\trezor-crypto\include\TrezorCrypto\ed25519-donna\ed25519-donna-32bit-tables.h" />
+    <ClInclude Include="..\..\..\..\trezor-crypto\include\TrezorCrypto\ed25519-donna\ed25519-donna-basepoint-table.h" />
+    <ClInclude Include="..\..\..\..\trezor-crypto\include\TrezorCrypto\ed25519-donna\ed25519-donna-impl-base.h" />
+    <ClInclude Include="..\..\..\..\trezor-crypto\include\TrezorCrypto\ed25519-donna\ed25519-donna-portable.h" />
+    <ClInclude Include="..\..\..\..\trezor-crypto\include\TrezorCrypto\ed25519-donna\ed25519-keccak.h" />
+    <ClInclude Include="..\..\..\..\trezor-crypto\include\TrezorCrypto\ed25519-donna\ed25519-sha3.h" />
+    <ClInclude Include="..\..\..\..\trezor-crypto\include\TrezorCrypto\ed25519-donna\modm-donna-32bit.h" />
+    <ClInclude Include="..\..\..\..\trezor-crypto\include\TrezorCrypto\ed25519-donna.h" />
+    <ClInclude Include="..\..\..\..\trezor-crypto\include\TrezorCrypto\ed25519.h" />
+    <ClInclude Include="..\..\..\..\trezor-crypto\include\TrezorCrypto\endian.h" />
+    <ClInclude Include="..\..\..\..\trezor-crypto\include\TrezorCrypto\groestl.h" />
+    <ClInclude Include="..\..\..\..\trezor-crypto\include\TrezorCrypto\hasher.h" />
+    <ClInclude Include="..\..\..\..\trezor-crypto\include\TrezorCrypto\hmac.h" />
+    <ClInclude Include="..\..\..\..\trezor-crypto\include\TrezorCrypto\memzero.h" />
+    <ClInclude Include="..\..\..\..\trezor-crypto\include\TrezorCrypto\nano.h" />
+    <ClInclude Include="..\..\..\..\trezor-crypto\include\TrezorCrypto\nem.h" />
+    <ClInclude Include="..\..\..\..\trezor-crypto\include\TrezorCrypto\nist256p1.h" />
+    <ClInclude Include="..\..\..\..\trezor-crypto\include\TrezorCrypto\pbkdf2.h" />
+    <ClInclude Include="..\..\..\..\trezor-crypto\include\TrezorCrypto\rand.h" />
+    <ClInclude Include="..\..\..\..\trezor-crypto\include\TrezorCrypto\rc4.h" />
+    <ClInclude Include="..\..\..\..\trezor-crypto\include\TrezorCrypto\rfc6979.h" />
+    <ClInclude Include="..\..\..\..\trezor-crypto\include\TrezorCrypto\ripemd160.h" />
+    <ClInclude Include="..\..\..\..\trezor-crypto\include\TrezorCrypto\ripple\base58.h" />
+    <ClInclude Include="..\..\..\..\trezor-crypto\include\TrezorCrypto\schnorr.h" />
+    <ClInclude Include="..\..\..\..\trezor-crypto\include\TrezorCrypto\script.h" />
+    <ClInclude Include="..\..\..\..\trezor-crypto\include\TrezorCrypto\scrypt.h" />
+    <ClInclude Include="..\..\..\..\trezor-crypto\include\TrezorCrypto\secp256k1.h" />
+    <ClInclude Include="..\..\..\..\trezor-crypto\include\TrezorCrypto\sha2.h" />
+    <ClInclude Include="..\..\..\..\trezor-crypto\include\TrezorCrypto\sha3.h" />
+    <ClInclude Include="..\..\..\..\trezor-crypto\include\TrezorCrypto\sodium\keypair.h" />
+    <ClInclude Include="..\..\..\..\trezor-crypto\include\TrezorCrypto\sodium\private\ed25519_ref10_fe_25_5.h" />
+    <ClInclude Include="..\..\..\..\trezor-crypto\include\TrezorCrypto\sodium\private\ed25519_ref10.h" />
+    <ClInclude Include="..\..\..\..\trezor-crypto\include\TrezorCrypto\sodium\private\fe_25_5\constants.h" />
+    <ClInclude Include="..\..\..\..\trezor-crypto\include\TrezorCrypto\sodium\private\fe_25_5\fe.h" />
+    <ClInclude Include="..\..\..\..\trezor-crypto\include\TrezorCrypto\TrezorCrypto.h" />
+    <ClInclude Include="..\..\..\..\include\context\Context.h" />
+    <ClInclude Include="..\..\..\..\include\context\ContextBTC.h" />
+    <ClInclude Include="..\..\..\..\include\context\ContextETH.h" />
+    <ClInclude Include="..\..\..\..\include\context\ContextHC.h" />
+    <ClInclude Include="..\..\..\..\include\context\ContextEOS.h" />
+    <ClInclude Include="..\..\..\..\include\device\ApduBuilder.hpp" />
+    <ClInclude Include="..\..\..\..\include\device\DeviceIOLogHelper.hpp" />
+    <ClInclude Include="..\..\..\..\include\device\DeviceTypeBase.hpp" />
+    <ClInclude Include="..\..\..\..\include\device\Fido.h" />
+    <ClInclude Include="..\..\..\..\include\device\JubiterHidDevice.hpp" />
+    <ClInclude Include="..\..\..\..\include\JUB_SDK.h" />
+    <ClInclude Include="..\..\..\..\include\JUB_SDK_Hcash.h" />
+    <ClInclude Include="..\..\..\..\include\JUB_SDK_BTC.h" />
+    <ClInclude Include="..\..\..\..\include\JUB_SDK_COMM.h" />
+    <ClInclude Include="..\..\..\..\include\JUB_SDK_DEV.h" />
+    <ClInclude Include="..\..\..\..\include\JUB_SDK_DEV_BLE.h" />
+    <ClInclude Include="..\..\..\..\include\JUB_SDK_DEV_HID.h" />
+    <ClInclude Include="..\..\..\..\include\JUB_SDK_ETH.h" />
+    <ClInclude Include="..\..\..\..\include\JUB_SDK_EOS.h" />
+    <ClInclude Include="..\..\..\..\include\libBCH\libBCH.hpp" />
+    <ClInclude Include="..\..\..\..\include\libBTC\libBTC.hpp" />
+    <ClInclude Include="..\..\..\..\include\libETH\ERC20Abi.h" />
+    <ClInclude Include="..\..\..\..\include\token\interface\BTCTokenInterface.hpp" />
+    <ClInclude Include="..\..\..\..\include\token\interface\ETHTokenInterface.hpp" />
+    <ClInclude Include="..\..\..\..\include\token\interface\HCTokenInterface.hpp" />
+    <ClInclude Include="..\..\..\..\include\token\interface\EOSTokenInterface.hpp" />
+    <ClInclude Include="..\..\..\..\include\token\interface\TokenInterface.hpp" />
+    <ClInclude Include="..\..\..\..\include\token\JubiterBLDImpl.h" />
+    <ClInclude Include="..\..\..\..\include\utility\Apdu.hpp" />
+    <ClInclude Include="..\..\..\..\include\utility\Singleton.h" />
+    <ClInclude Include="..\..\..\..\include\utility\util.h" />
+    <ClInclude Include="..\..\..\..\include\utility\xManager.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\deps\airbitz-core\abcd\util\Data.cpp" />
+    <ClCompile Include="..\..\..\..\deps\bigint\BigInteger.cc" />
+    <ClCompile Include="..\..\..\..\deps\bigint\BigIntegerAlgorithms.cc" />
+    <ClCompile Include="..\..\..\..\deps\bigint\BigIntegerUtils.cc" />
+    <ClCompile Include="..\..\..\..\deps\bigint\BigUnsigned.cc" />
+    <ClCompile Include="..\..\..\..\deps\bigint\BigUnsignedInABase.cc" />
+    <ClCompile Include="..\..\..\..\deps\bitcoinABC\cashaddr.cc" />
+    <ClCompile Include="..\..\..\..\deps\bitcoin\bech32.cpp" />
+    <ClCompile Include="..\..\..\..\src\context\Context.cpp" />
+    <ClCompile Include="..\..\..\..\src\context\ContextBTC.cpp" />
+    <ClCompile Include="..\..\..\..\src\context\ContextETH.cpp" />
+    <ClCompile Include="..\..\..\..\src\context\ContextHC.cpp" />
+    <ClCompile Include="..\..\..\..\src\context\ContextEOS.cpp" />
+    <ClCompile Include="..\..\..\..\src\device\ApduBuilder.cpp" />
+    <ClCompile Include="..\..\..\..\src\device\Fido.cpp" />
+    <ClCompile Include="..\..\..\..\src\device\JubiterHidDevice.cpp" />
+    <ClCompile Include="..\..\..\..\src\JUB_SDK_Hcash.cpp" />
+    <ClCompile Include="..\..\..\..\src\JUB_SDK_BTC.cpp" />
+    <ClCompile Include="..\..\..\..\src\JUB_SDK_COMM.cpp" />
+    <ClCompile Include="..\..\..\..\src\JUB_SDK_DEV.cpp" />
+    <ClCompile Include="..\..\..\..\src\JUB_SDK_DEV_BLE.cpp" />
+    <ClCompile Include="..\..\..\..\src\JUB_SDK_DEV_HID.cpp" />
+    <ClCompile Include="..\..\..\..\src\JUB_SDK_ETH.cpp" />
+    <ClCompile Include="..\..\..\..\src\JUB_SDK_EOS.cpp" />
+    <ClCompile Include="..\..\..\..\src\libBTC\libBTC.cpp" />
+    <ClCompile Include="..\..\..\..\src\libBCH\libBCH.cpp" />
+    <ClCompile Include="..\..\..\..\src\libETH\ERC20Abi.cpp" />
+    <ClCompile Include="..\..\..\..\src\libHC\libHC.cpp" />
+    <ClCompile Include="..\..\..\..\src\libEOS\libEOS.cpp" />
+    <ClCompile Include="..\..\..\..\src\token\JubiterBLDImpl.cpp" />
+    <ClCompile Include="..\..\..\..\src\token\JubiterBLDImplBTC.cpp" />
+    <ClCompile Include="..\..\..\..\src\token\JubiterBLDImplETH.cpp" />
+    <ClCompile Include="..\..\..\..\src\token\JubiterBLDImplHC.cpp" />
+    <ClCompile Include="..\..\..\..\src\token\JubiterBLDImplEOS.cpp" />
+    <ClCompile Include="..\..\..\..\src\utility\util.cpp" />
+    <ClCompile Include="..\..\..\..\trezor-crypto\src\address.c" />
+    <ClCompile Include="..\..\..\..\trezor-crypto\src\aes\aes_modes.c" />
+    <ClCompile Include="..\..\..\..\trezor-crypto\src\aes\aescrypt.c" />
+    <ClCompile Include="..\..\..\..\trezor-crypto\src\aes\aeskey.c" />
+    <ClCompile Include="..\..\..\..\trezor-crypto\src\aes\aesopt.h" />
+    <ClCompile Include="..\..\..\..\trezor-crypto\src\aes\aestab.c" />
+    <ClCompile Include="..\..\..\..\trezor-crypto\src\aes\aestab.h" />
+    <ClCompile Include="..\..\..\..\trezor-crypto\src\base32.c" />
+    <ClCompile Include="..\..\..\..\trezor-crypto\src\base58.c" />
+    <ClCompile Include="..\..\..\..\trezor-crypto\src\bignum.c" />
+    <ClCompile Include="..\..\..\..\trezor-crypto\src\bip32.c" />
+    <ClCompile Include="..\..\..\..\trezor-crypto\src\bip39_english.h" />
+    <ClCompile Include="..\..\..\..\trezor-crypto\src\bip39.c" />
+    <ClCompile Include="..\..\..\..\trezor-crypto\src\blake2_common.h" />
+    <ClCompile Include="..\..\..\..\trezor-crypto\src\blake2b.c" />
+    <ClCompile Include="..\..\..\..\trezor-crypto\src\blake2s.c" />
+    <ClCompile Include="..\..\..\..\trezor-crypto\src\blake256.c" />
+    <ClCompile Include="..\..\..\..\trezor-crypto\src\cash_addr.c" />
+    <ClCompile Include="..\..\..\..\trezor-crypto\src\ed25519-donna\curve25519-donna-32bit.c" />
+    <ClCompile Include="..\..\..\..\trezor-crypto\src\ed25519-donna\curve25519-donna-helpers.c" />
+    <ClCompile Include="..\..\..\..\trezor-crypto\src\ed25519-donna\curve25519-donna-scalarmult-base.c" />
+    <ClCompile Include="..\..\..\..\trezor-crypto\src\ed25519-donna\curve25519-donna-scalarmult-base.h" />
+    <ClCompile Include="..\..\..\..\trezor-crypto\src\ed25519-donna\ed25519-blake2b.c" />
+    <ClCompile Include="..\..\..\..\trezor-crypto\src\ed25519-donna\ed25519-donna-32bit-tables.c" />
+    <ClCompile Include="..\..\..\..\trezor-crypto\src\ed25519-donna\ed25519-donna-basepoint-table.c" />
+    <ClCompile Include="..\..\..\..\trezor-crypto\src\ed25519-donna\ed25519-donna-impl-base.c" />
+    <ClCompile Include="..\..\..\..\trezor-crypto\src\ed25519-donna\ed25519-hash-custom-blake2b.h" />
+    <ClCompile Include="..\..\..\..\trezor-crypto\src\ed25519-donna\ed25519-hash-custom-keccak.h" />
+    <ClCompile Include="..\..\..\..\trezor-crypto\src\ed25519-donna\ed25519-hash-custom-sha3.h" />
+    <ClCompile Include="..\..\..\..\trezor-crypto\src\ed25519-donna\ed25519-hash-custom.h" />
+    <ClCompile Include="..\..\..\..\trezor-crypto\src\ed25519-donna\ed25519-keccak.c" />
+    <ClCompile Include="..\..\..\..\trezor-crypto\src\ed25519-donna\ed25519-sha3.c" />
+    <ClCompile Include="..\..\..\..\trezor-crypto\src\ed25519-donna\ed25519.c" />
+    <ClCompile Include="..\..\..\..\trezor-crypto\src\ed25519-donna\modm-donna-32bit.c" />
+    <ClCompile Include="..\..\..\..\trezor-crypto\src\groestl_internal.h" />
+    <ClCompile Include="..\..\..\..\trezor-crypto\src\groestl.c" />
+    <ClCompile Include="..\..\..\..\trezor-crypto\src\hasher.c" />
+    <ClCompile Include="..\..\..\..\trezor-crypto\src\hmac.c" />
+    <ClCompile Include="..\..\..\..\trezor-crypto\src\memzero.c" />
+    <ClCompile Include="..\..\..\..\trezor-crypto\src\nano.c" />
+    <ClCompile Include="..\..\..\..\trezor-crypto\src\nem.c" />
+    <ClCompile Include="..\..\..\..\trezor-crypto\src\nist256p1.c" />
+    <ClCompile Include="..\..\..\..\trezor-crypto\src\pbkdf2.c" />
+    <ClCompile Include="..\..\..\..\trezor-crypto\src\rand.c" />
+    <ClCompile Include="..\..\..\..\trezor-crypto\src\rc4.c" />
+    <ClCompile Include="..\..\..\..\trezor-crypto\src\ripemd160.c" />
+    <ClCompile Include="..\..\..\..\trezor-crypto\src\ripple\base58.c" />
+    <ClCompile Include="..\..\..\..\trezor-crypto\src\schnorr.c" />
+    <ClCompile Include="..\..\..\..\trezor-crypto\src\script.c" />
+    <ClCompile Include="..\..\..\..\trezor-crypto\src\scrypt.c" />
+    <ClCompile Include="..\..\..\..\trezor-crypto\src\secp256k1.c" />
+    <ClCompile Include="..\..\..\..\trezor-crypto\src\sha2.c" />
+    <ClCompile Include="..\..\..\..\trezor-crypto\src\sha3.c" />
+    <ClCompile Include="..\..\..\..\trezor-crypto\src\sodium\keypair.c" />
+    <ClCompile Include="..\..\..\..\trezor-crypto\src\sodium\private\ed25519_ref10_fe_25_5.c" />
+    <ClCompile Include="..\..\..\..\trezor-crypto\src\sodium\private\ed25519_ref10.c" />
+    <ClCompile Include="..\..\..\..\trezor-crypto\src\\sodium\private\fe_25_5\fe.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\..\..\deps\hidapi\libhidapi\x64\hidapi_vs2017.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

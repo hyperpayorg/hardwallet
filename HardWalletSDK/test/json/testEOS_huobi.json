@@ -1,0 +1,25 @@
+{
+    "main_path" : "m/44'/194'/0'",
+    "EOS" : {
+        "chainID" : "",
+        "expiration" : "900",
+        "referenceBlockId" : "05b7dcdbf9cdf1af11c2109a5299ea556ef46bbb98cd03c40f9abfa6eb121303",
+        "referenceBlockTime" : "2019-12-20 07:59:19",
+        "actions" : [
+        {
+            "type" : 0,
+            "currency" : "eosio.token",
+            "name" : "transfer",
+            "0" : {
+                "from" : "zijunzimo555",
+                "to" : "huobideposit",
+                "asset" : "0.05 EOS",
+                "memo" : "4435731"
+            }
+        }],
+        "bip32_path" : {
+            "change" : false,
+            "addressIndex" : 0
+        }
+    }
+}

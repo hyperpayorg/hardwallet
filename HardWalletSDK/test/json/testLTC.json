@@ -1,0 +1,26 @@
+{
+    "ver" : "01000000",
+    "p2sh-segwit" : true,
+    "main_path" : "m/49'/2'/0'",
+    "inputs" : [
+    {
+        "preHash" : "36be1289b70c57151db72c7618c8cd195d1cf5b6286fa30f836954c8431813ac",
+        "preIndex" : 0,
+        "amount" : 35000000,
+        "bip32_path" : {
+            "change" : false,
+            "addressIndex" : 0
+        }
+    }],
+    "outputs" : [
+    {
+        "address" : "MKGPCCUue3jbJYqm2CxzBf1mYh7DLnnCve",
+        "amount" : 34999000,
+        "change_address" : false,
+        "bip32_path" : {
+            "change" : false,
+            "addressIndex" : 1
+        }
+    }],
+    "lock_time" : 0
+}

@@ -1,0 +1,41 @@
+{
+    "ver" : "01000000",
+    "trans_type" : 2,
+    "main_path" : "m/45'",
+    "m" : 2,
+    "n" : 2,
+    "cosigners" : [
+    "dpubZCH9Uhc2XtxYqjnVC7vHQ4bXBQwb4YvtZDJQ1j93tF4CGtQQQzynmQTad7uPBKY6tK2qUMUdAEyZpwHutZdSGe2YYys2MWozz5GTXft2Ewh"
+    ],
+    "inputs" : [
+    {
+        "amount" : 200000000,
+        "bip32_path" : {
+            "change" : false,
+            "addressIndex" : 0
+        }
+    },
+    {
+        "amount" : 1000000000,
+        "bip32_path" : {
+            "change" : false,
+            "addressIndex" : 0
+        }
+    }],
+    "outputs" : [
+    {
+        "change_address" : true,
+        "bip32_path" : {
+            "change" : false,
+            "addressIndex" : 0
+        }
+    },
+    {
+        "change_address" : false,
+        "bip32_path" : {
+            "change" : false,
+            "addressIndex" : 0
+        }
+    }],
+    "unsigned_tx" : "010000000209f22e9e9cfc69725218ed9de8d5f938bced3654744363cfaa472ee0b7b135fe0000000000ffffffffdd783db2db5cd5305b59401e46c0c2c630aa7a35f40627d2745fd78ed50c1e650100000000ffffffff0200e9a43500000000000017a91490b6f65838b150da650eed99cf7e77d3eee5e1ed8700c2eb0b0000000000001976a914b813b11086af4242589c20196b1ab516834fa32188ac000000000000000002ffffffffffffffff00000000ffffffff00ffffffffffffffff00000000ffffffff00"
+}
